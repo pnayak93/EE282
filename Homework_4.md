@@ -115,11 +115,14 @@ bioawk -c fastx ' { print length($seq) "\t" gc($seq) } ' greater_than_100kb.fast
     ggplot(len_gc_greater, aes(x=gc))+geom_histogram(color="darkblue", fill="lightblue", bins=7)
     ```
     the files are saved in the /output/figures folder under the names
+
     len_gc_greater_gc.png
 
     ![histogram of seq GC content > 100kb](/output/figures/len_gc_greater_gc.png)
 
     len_gc_less_gc.png
+
+
     ![histogram of seq GC content <= 100kb](/output/figures/len_gc_less_gc.png)
 
 3. Cumulative sequence size sorted from largest to smallest sequences
@@ -258,7 +261,7 @@ The final plot is named CDF.png, in the directory :
 ```
 /data/raw/pipeline/output/figures
 ```
-![CDF of <= 100kb](/data/raw/pipeline/output/figures)
+![CDF of <= 100kb](/data/raw/pipeline/output/figures/CDF.png)
 
 
 

@@ -259,9 +259,9 @@ In this CDF.png plot, the solid line represents the sequence lengths of the r6 c
 The final plot is named CDF.png, in the directory :
 
 ```
-/data/raw/pipeline/output/figures
+/output/figures
 ```
-![CDF of <= 100kb](/data/raw/pipeline/output/figures/CDF.png)
+![CDF of <= 100kb](/output/figures/CDF.png)
 
 
 

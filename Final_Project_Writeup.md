@@ -88,7 +88,7 @@ Figure 5: output of R barplot accepting as input the output from previous python
 
 Figure 6: validation of gene list hits against pubmed articles web search
 
-![POC](/code/scripts/POC.png)
+![POC](/code/scripts/POC.PNG)
 
 # Discussion
 

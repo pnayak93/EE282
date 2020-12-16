@@ -10,7 +10,7 @@ Upon completion of almost any Next Generation Sequencing (NGS) experiment, scien
 
 2) (Written in Python) Takes lists of gene names (either conventional names or ENSEMBL-ID) in excel file format that are output from a typical RNA-seq or other NGS experiment, and searches these genes, along with a user input search term, against the pubmed research database, and returns the number of article hits for each search in an excel file.
 
-3) (Written in R) Takes the output from script 2 as input to create a bar plot of the genes to get a better visual representation of which gene search hits on pubmed.
+3) (Written in R) Takes the output from script 2 as input to create a bar plot of the genes to get a better visual representation of gene search hits on pubmed.
 
 
 # Methods

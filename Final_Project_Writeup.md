@@ -51,7 +51,16 @@ python ncbi-scraper-with-ensembl-id-input.py test-ens-gene-list-short2.xlsx tend
 ```
 for a sample gene list in ENSEMBL ID format.
 
-After the excel file is output from the python program, an R script utilizes the readxl library with file.choose() command to locally to allow the user to select the excel file of their output from the python program and convert the excel file into an R dataframe. Next, the ggplot2 library is used to create a barplot to visualize the number of research papers written per search, along with some formatting adjustments for readability improvement. This script needs to be run on Rstudio locally due to issues I faced with package management for R libraries on the hpc3.
+After the excel file is output from the python program, an R script utilizes the readxl library with file.choose() command to locally to allow the user to select the excel file of their output from the python program and convert the excel file into an R dataframe. Next, the ggplot2 library is used to create a barplot to visualize the number of research papers written per search, along with some formatting adjustments for readability improvement. This script needs to be run on Rstudio locally due to issues I faced with package management for R libraries on the hpc3. The code for the R script is entitled r-plotter.R and is in the code/scripts directory. It is also shown below:
+
+```
+library(readxl)
+library(ggplot2)
+
+a<-read_excel(file.choose())
+p<-ggplot(data=a, aes(x=Name, y=`Pubmed Count`)) + geom_bar(stat="identity", fill="steelblue")+theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+p
+```
 
 
 # Results
